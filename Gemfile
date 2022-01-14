@@ -9,6 +9,9 @@ gem 'faker',          '2.11.0'
 gem 'jbuilder',       '2.10.0'
 gem 'puma',           '5.3.1'
 gem 'rails',          '6.1.4.1'
+gem 'image_processing', '1.9.3'
+gem 'active_storage_validations', '0.8.9'
+gem 'mini_magick', '4.9.5'
 gem 'sass-rails',     '6.0.0'
 gem 'turbolinks',     '5.2.1'
 gem 'webpacker',      '5.4.0'
@@ -39,6 +42,7 @@ end
 
 group :production do
   gem 'pg', '1.2.3'
+  gem 'aws-sdk-s3', '1.87.0', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
